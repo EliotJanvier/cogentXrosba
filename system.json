@@ -1,0 +1,30 @@
+{
+    "name": "cogentXrosba",
+    "title": "cogentXrosba",
+    "description": "cogentXrosba",
+    "authors": "epyj",
+    "version": "0.01",
+    "minimumCoreVersion": "10.285",
+    "compatibleCoreVersion": "10.285",
+
+    "esmodules": [
+        "cogent.js"
+    ],
+    "styles": [
+        "cogent.css"
+    ],
+    "packs": [
+
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "wounds",
+    "initiative": "1d100 + 1000 * @reflexes"
+}

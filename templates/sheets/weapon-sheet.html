@@ -1,0 +1,38 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "cogentXrosba.weapon.attack"}}</th>
+                <th>{{localize "cogentXrosba.weapon.pierce"}}</th>
+                <th>{{localize "cogentXrosba.weapon.dual_wield_bonus"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.attack">
+                        {{#select data.attack}}
+                        {{#each config.weaponTypes as |name type|}}
+                        <option value="{{type}}">{{name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.pierce" type="number" value="{{data.pierce}}"" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.dual_wield_bonus" type="checkbox" {{checked data.dual_wield_bonus}} />
+                    <!-- <input list="dualwieldbonus" name="data.dual_wield_bonus" value="{{data.dual_wield_bonus}}">
+                    <datalist id="dualwieldbonus">
+                        <option value=1>
+                        <option value=2>
+                    </datalist> -->
+                </td>
+                <input type="submit">
+            </tr>
+        </table>
+    </div>
+</form>

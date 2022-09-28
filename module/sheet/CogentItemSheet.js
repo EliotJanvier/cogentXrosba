@@ -1,0 +1,14 @@
+export default class CogentItemSheet extends ItemSheet {
+    get template() {
+        console.log("cxr | got item sheet template");
+        return `systems/cogentXrosba/templates/sheets/${this.item.type}-sheet.html`;
+    }
+
+
+    getData() {
+        const data = super.getData();
+        data.config = CONFIG.cogentXrosba
+        console.log("cxr | data.pierce: " + data.pierce)
+        return data;
+    }
+}
