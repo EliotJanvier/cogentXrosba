@@ -4,7 +4,6 @@ export default class CogentItemSheet extends ItemSheet {
         return `systems/cogentXrosba/templates/sheets/${this.item.type}-sheet.html`;
     }
 
-
     getData() {
         const data = super.getData();
         data.config = CONFIG.cogentXrosba

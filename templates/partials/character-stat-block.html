@@ -1,0 +1,48 @@
+<section>
+<table>
+    <caption>Attributes</caption>
+    <!-- <tr>
+        <th>Strength</th>
+        <th>Reflexes</th>
+        <th>Intelligence</th>
+    </tr>
+    <tr>
+        <td>
+            <input name="system.Attributes.Strength" type="number" value="{{actor.system.Attributes.Strength}}" item-dtype="Number" label="Strength" />
+        </td>
+        <td>
+            <input name="system.Attributes.Reflexes" type="number" value="{{actor.system.Attributes.Reflexes}}" item-dtype="Number" label="Reflexes" />
+        </td>
+        <td>
+            <input name="system.Attributes.Intelligence" type="number" value="{{actor.system.Attributes.Intelligence}}" item-dtype="Number" label="Intelligence" />
+        </td>
+    </tr> -->
+    <tr>
+        {{#each data.system.Attributes as |value name|}}
+        <th>
+            {{name}}
+        </th>
+        {{/each}}
+    </tr>
+    <tr>
+        {{#each data.system.Attributes as |value name|}}
+        <td>
+            <input name="system.Attributes.{{name}}" "type="number" value={{this}} item-dtype="Number" label="{{name}}" />
+        </td>
+        {{/each}}
+    </tr>
+</table>
+<table>
+    <caption>Expertises</caption>
+        {{#each data.system.Expertises as |value name|}}
+        <tr>
+        <th>
+            {{name}}
+        </th>
+        <td>
+            <input name="system.Expertises.{{name}}.value" "type="number" value={{this.value}} item-dtype="Number" label="{{name}}" />
+        </td>
+        </tr>
+        {{/each}}
+</table>
+</section>

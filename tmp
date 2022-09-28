@@ -1,0 +1,29 @@
+"level": 0,
+"wounds": [0],
+"Attributes": {
+    "Strength": 0,
+    "Reflexes": 0,
+    "Intelligence": 0
+},
+"Expertises": {
+    "Stamina": {"value": 0, "type": "Strength"},
+    "Athletism": {"value": 0, "type": "Strength"},
+    "Grip": {"value": 0, "type": "Strength"},
+    "Swimming": {"value": 0, "type": "Strength"},
+    "Aiming_Throwing": {"value": 0, "type": "Strength"},
+
+    "Perception": {"value": 0, "type": "Reflexes"},
+    "Acrobats": {"value": 0, "type": "Reflexes"},
+    "Pilot": {"value": 0, "type": "Reflexes"},
+    "Dexterity": {"value": 0, "type": "Reflexes"},
+    "Furtivity": {"value": 0, "type": "Reflexes"},
+
+    "Knowledge": {"value": 0, "type": "Intelligence"},
+    "Deception": {"value": 0, "type": "Intelligence"},
+    "Persuasion": {"value": 0, "type": "Intelligence"},
+    "Infiltration": {"value": 0, "type": "Intelligence"},
+    "Survival": {"value": 0, "type": "Intelligence"}
+},
+"Vocations": {
+
+}
