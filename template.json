@@ -1,24 +1,19 @@
 {
-    "Actor": {},
+    "Actor": {
+
+    },
     "Item": {
         "types": [
             "weapon",
             "armor"
         ],
-        "templates": {
-            "itemDescription": {
-                "description": ""
-            }
-        },
         "weapon": {
-            "templates": ["itemDescription"],
-            "weaponType": 0,
+            "weaponType": "",
             "pierce": 0,
-            "dual_wield_bonus": 1
+            "dualwields": false
         },
         "armor": {
-            "templates": ["itemDescription"],
-            "defence": 0
+            "defense": 0
         }
     }
 }

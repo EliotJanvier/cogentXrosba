@@ -1,4 +1,3 @@
-
 import { cogentXrosba } from "./module/config.js";
 import CogentItemSheet from "./module/sheet/CogentItemSheet.js"
 

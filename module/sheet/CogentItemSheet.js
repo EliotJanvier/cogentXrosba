@@ -8,7 +8,8 @@ export default class CogentItemSheet extends ItemSheet {
     getData() {
         const data = super.getData();
         data.config = CONFIG.cogentXrosba
-        console.log("cxr | data.pierce: " + data.pierce)
+        // console.log(JSON.stringify(data));
+        // console.log("cxr | what you want to know: " + JSON.stringify(data.document.system.pierce))
         return data;
     }
 }

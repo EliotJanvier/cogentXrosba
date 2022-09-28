@@ -7,7 +7,7 @@
         "weapon": {
             "attack": "Weapon Type",
             "pierce": "Pierce",
-            "dual_wield_bonus": "Dual wield bonus"
+            "dualwields": "Dual wield bonus"
         }
     }
 }
