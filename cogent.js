@@ -5,6 +5,7 @@ import CogentCharacterSheet from "./module/sheet/CogentCharacterSheet.js"
 async function preloadHandlebarsTemplates() {
     const templatePaths = [
         "systems/cogentXrosba/templates/partials/character-stat-block.html",
+        "systems.cogentXrosba/templates/partials/vocation-card.html"
     ];
     return loadTemplates(templatePaths);
 }

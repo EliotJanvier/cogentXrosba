@@ -6,6 +6,12 @@
         <p> Level: {{actor.system.level}}</p> #TODO level up
     </div>
     <div class="Attributes">
-        {{> systems/cogentXrosba/templates/partials/character-stat-block.html}}
+        {{> "systems/cogentXrosba/templates/partials/character-stat-block.html"}}
+    </div>
+    <div class="Vocations">
+        {{#each actor.vocation as |voc id|}}
+            <p> et une vocation de plus</p>
+            {{> "systems/cogentXrosba/templates/partials/vocation-card.html" voc}}
+        {{/each}}
     </div>
 </form>

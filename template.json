@@ -30,9 +30,6 @@
                 "Persuasion": {"value": 0, "type": "Intelligence"},
                 "Infiltration": {"value": 0, "type": "Intelligence"},
                 "Survival": {"value": 0, "type": "Intelligence"}
-            },
-            "Vocations": {
-
             }
         },
         "ship": {
@@ -42,12 +39,23 @@
     "Item": {
         "types": [
             "weapon",
-            "armor"
+            "armor",
+            "vocation"
         ],
         "weapon": {
             "weaponType": "",
             "pierce": 0,
             "dualwields": false
+        },
+        "vocation": {
+            "level": 1,
+            "uses_strength": false,
+            "uses_reflexes": false,
+            "uses_intelligence": false,
+            "skill1": {"name": "", "level": 0},
+            "skill2": {"name": "", "level": 0},
+            "skill3": {"name": "", "level": 0},
+            "skill4": {"name": "", "level": 0}
         },
         "armor": {
             "defense": 0
