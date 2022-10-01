@@ -19,7 +19,7 @@ export default class CogentCharacterSheet extends ActorSheet {
         data.vocation = data.items.filter((item) => {
             return item.type == "vocation";
         })
-        // console.log("cxr | vocations: " + data.vocation);
+        // console.log("cxr | vocations: " + JSON.stringify(data.vocation));
         // console.log("cxr | " + JSON.stringify(data));
         console.log("cxr | what you want to know: " + JSON.stringify(data))
         return data;

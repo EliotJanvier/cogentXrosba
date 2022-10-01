@@ -30,6 +30,41 @@
                 "Persuasion": {"value": 0, "type": "Intelligence"},
                 "Infiltration": {"value": 0, "type": "Intelligence"},
                 "Survival": {"value": 0, "type": "Intelligence"}
+            },
+            "Vocations": {
+                "vocation1": {
+                    "name": "",
+                    "level": 1,
+                    "uses_strength": false,
+                    "uses_reflexes": false,
+                    "uses_intelligence": false,
+                    "skill1": {"name": "", "level": 0},
+                    "skill2": {"name": "", "level": 0},
+                    "skill3": {"name": "", "level": 0},
+                    "skill4": {"name": "", "level": 0}
+                },
+                "vocation2": {
+                    "name": "",
+                    "level": 1,
+                    "uses_strength": false,
+                    "uses_reflexes": false,
+                    "uses_intelligence": false,
+                    "skill1": {"name": "", "level": 0},
+                    "skill2": {"name": "", "level": 0},
+                    "skill3": {"name": "", "level": 0},
+                    "skill4": {"name": "", "level": 0}
+                },
+                "vocation3": {
+                    "name": "",
+                    "level": 1,
+                    "uses_strength": false,
+                    "uses_reflexes": false,
+                    "uses_intelligence": false,
+                    "skill1": {"name": "", "level": 0},
+                    "skill2": {"name": "", "level": 0},
+                    "skill3": {"name": "", "level": 0},
+                    "skill4": {"name": "", "level": 0}
+                }
             }
         },
         "ship": {

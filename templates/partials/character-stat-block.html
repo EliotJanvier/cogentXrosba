@@ -1,22 +1,6 @@
 <section>
 <table>
     <caption>Attributes</caption>
-    <!-- <tr>
-        <th>Strength</th>
-        <th>Reflexes</th>
-        <th>Intelligence</th>
-    </tr>
-    <tr>
-        <td>
-            <input name="system.Attributes.Strength" type="number" value="{{actor.system.Attributes.Strength}}" item-dtype="Number" label="Strength" />
-        </td>
-        <td>
-            <input name="system.Attributes.Reflexes" type="number" value="{{actor.system.Attributes.Reflexes}}" item-dtype="Number" label="Reflexes" />
-        </td>
-        <td>
-            <input name="system.Attributes.Intelligence" type="number" value="{{actor.system.Attributes.Intelligence}}" item-dtype="Number" label="Intelligence" />
-        </td>
-    </tr> -->
     <tr>
         {{#each data.system.Attributes as |value name|}}
         <th>
@@ -45,5 +29,76 @@
         </tr>
         {{/each}}
 </table>
+<table>
+    <caption>Vocations</caption>
+        {{#each data.system.Vocations as |voc name|}}
+        <br/>
+        <table>
+                <tr>
+                    <th>Vocation name:</th>
+                    <td>
+                        <input name="system.Vocations.{{name}}.name" type="text" value="{{this.name}}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Level</th>
+                    <td>
+                        <input name="system.Vocations.{{name}}.level" type="number" value="{{this.level}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Uses strength:</td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.uses_strength" type="checkbox" {{checked this.uses_strength}} />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Uses reflexes:</td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.uses_reflexes" type="checkbox" {{checked this.uses_reflexes}} />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Uses intelligence:</td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.uses_intelligence" type="checkbox" {{checked this.uses_intelligence}} />
+                    </td>
+                </tr>
+                <th>Skills</th>
+                <tr>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill1.name" type="text" value="{{this.skill1.name}}" placeholder="skill name"/>
+                    </td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill1.level" type="number" value="{{this.skill1.level}}" placeholder="skill level"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill2.name" type="text" value="{{this.skill2.name}}" placeholder="skill name"/>
+                    </td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill2.level" type="number" value="{{this.skill2.level}}" placeholder="skill level"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill3.name" type="text" value="{{this.skill3.name}}" placeholder="skill name"/>
+                    </td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill3.level" type="number" value="{{this.skill3.level}}" placeholder="skill level"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill4.name" type="text" value="{{this.skill4.name}}" placeholder="skill name"/>
+                    </td>
+                    <td>
+                        <input name="system.Vocations.{{name}}.skill4.level" type="number" value="{{this.skill4.level}}" placeholder="skill level"/>
+                    </td>
+                </tr>
+            </table>
 
+        {{/each}}
+</table>
 </section>
