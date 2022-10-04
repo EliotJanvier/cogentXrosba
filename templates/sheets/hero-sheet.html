@@ -2,6 +2,9 @@
     <divclass="sidebar">
     <img src="{{actor.img}}" data-edit="img", title="{{actor.name}}" />
     <p> the name is {{actor.name}}</p>
+    {{#each actor.items as |item|}}
+        {{this.name}}
+    {{/each}}
     <div class="basicinfo">
         <p> Level: {{actor.system.level}}</p> #TODO level up
     </div>

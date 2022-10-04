@@ -16,8 +16,8 @@ export default class CogentCharacterSheet extends ActorSheet {
     getData() {
         const data = super.getData();
         data.config = CONFIG.cogentXrosba;
-        data.vocation = data.items.filter((item) => {
-            return item.type == "vocation";
+        data.weapons = data.items.filter((item) => {
+            return item.type == "weapon";
         })
         // console.log("cxr | vocations: " + JSON.stringify(data.vocation));
         // console.log("cxr | " + JSON.stringify(data));
